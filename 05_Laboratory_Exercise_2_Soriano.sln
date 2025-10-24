@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Laboratory_Exercise_2_Soriano", "05_Laboratory_Exercise_2_Soriano\05_Laboratory_Exercise_2_Soriano.csproj", "{3013E4DD-A2FD-4576-81BD-81E162C9BB2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3013E4DD-A2FD-4576-81BD-81E162C9BB2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3013E4DD-A2FD-4576-81BD-81E162C9BB2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3013E4DD-A2FD-4576-81BD-81E162C9BB2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3013E4DD-A2FD-4576-81BD-81E162C9BB2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44811F5C-31C4-4887-BF29-0F06A2D74ED4}
+	EndGlobalSection
+EndGlobal
