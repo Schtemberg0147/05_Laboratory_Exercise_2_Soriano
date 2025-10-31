@@ -70,7 +70,7 @@
             Controls.Add(btnOpen);
             Controls.Add(lvShowText);
             Name = "FrmOpenTextFile";
-            Text = "Form1";
+            Text = "Open File";
             Load += FrmOpenTextFile_Load_1;
             ResumeLayout(false);
         }
