@@ -32,21 +32,21 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            dtpBirthday = new DateTimePicker();
             label5 = new Label();
             label6 = new Label();
             label7 = new Label();
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
+            cbGender = new ComboBox();
+            cbProgram = new ComboBox();
+            txtStudentNumber = new TextBox();
+            txtLastName = new TextBox();
+            txtAge = new TextBox();
+            txtContactNumber = new TextBox();
+            txtFirstName = new TextBox();
+            txtMiddleInitial = new TextBox();
             button1 = new Button();
             button2 = new Button();
             SuspendLayout();
@@ -54,10 +54,10 @@
             // lblRegistration
             // 
             lblRegistration.AutoSize = true;
-            lblRegistration.Font = new Font("Bahnschrift", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblRegistration.Location = new Point(19, 20);
+            lblRegistration.Font = new Font("Bahnschrift", 21.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblRegistration.Location = new Point(24, 29);
             lblRegistration.Name = "lblRegistration";
-            lblRegistration.Size = new Size(144, 29);
+            lblRegistration.Size = new Size(171, 35);
             lblRegistration.TabIndex = 0;
             lblRegistration.Text = "Registration";
             lblRegistration.Click += lblRegistration_Click;
@@ -86,25 +86,25 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Bahnschrift SemiBold", 12F, FontStyle.Bold);
-            label4.Location = new Point(131, 210);
+            label4.Location = new Point(131, 213);
             label4.Name = "label4";
             label4.Size = new Size(37, 19);
             label4.TabIndex = 3;
             label4.Text = "Age";
             // 
-            // dateTimePicker1
+            // dtpBirthday
             // 
-            dateTimePicker1.Font = new Font("Bahnschrift", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            dateTimePicker1.Location = new Point(186, 268);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(213, 26);
-            dateTimePicker1.TabIndex = 4;
+            dtpBirthday.Font = new Font("Bahnschrift", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dtpBirthday.Location = new Point(186, 270);
+            dtpBirthday.Name = "dtpBirthday";
+            dtpBirthday.Size = new Size(246, 26);
+            dtpBirthday.TabIndex = 4;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Bahnschrift SemiBold", 12F, FontStyle.Bold);
-            label5.Location = new Point(98, 269);
+            label5.Location = new Point(98, 271);
             label5.Name = "label5";
             label5.Size = new Size(70, 19);
             label5.TabIndex = 5;
@@ -114,7 +114,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Bahnschrift SemiBold", 12F, FontStyle.Bold);
-            label6.Location = new Point(480, 273);
+            label6.Location = new Point(480, 270);
             label6.Name = "label6";
             label6.Size = new Size(127, 19);
             label6.TabIndex = 9;
@@ -124,7 +124,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Bahnschrift SemiBold", 12F, FontStyle.Bold);
-            label7.Location = new Point(545, 209);
+            label7.Location = new Point(545, 212);
             label7.Name = "label7";
             label7.Size = new Size(62, 19);
             label7.TabIndex = 8;
@@ -144,7 +144,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Bahnschrift SemiBold", 12F, FontStyle.Bold);
-            label9.Location = new Point(533, 108);
+            label9.Location = new Point(383, 108);
             label9.Name = "label9";
             label9.Size = new Size(74, 19);
             label9.TabIndex = 6;
@@ -154,91 +154,93 @@
             // 
             label10.AutoSize = true;
             label10.Font = new Font("Bahnschrift SemiBold", 12F, FontStyle.Bold);
-            label10.Location = new Point(384, 159);
+            label10.Location = new Point(383, 160);
             label10.Name = "label10";
             label10.Size = new Size(33, 19);
             label10.TabIndex = 10;
             label10.Text = "M.I.";
             // 
-            // comboBox1
+            // cbGender
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(629, 210);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 11;
+            cbGender.FormattingEnabled = true;
+            cbGender.Location = new Point(629, 213);
+            cbGender.Name = "cbGender";
+            cbGender.Size = new Size(121, 23);
+            cbGender.TabIndex = 11;
             // 
-            // comboBox2
+            // cbProgram
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(629, 108);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 12;
+            cbProgram.FormattingEnabled = true;
+            cbProgram.Location = new Point(480, 109);
+            cbProgram.Name = "cbProgram";
+            cbProgram.Size = new Size(270, 23);
+            cbProgram.TabIndex = 12;
             // 
-            // textBox1
+            // txtStudentNumber
             // 
-            textBox1.Location = new Point(186, 108);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 13;
+            txtStudentNumber.Location = new Point(186, 108);
+            txtStudentNumber.Name = "txtStudentNumber";
+            txtStudentNumber.Size = new Size(152, 23);
+            txtStudentNumber.TabIndex = 13;
             // 
-            // textBox2
+            // txtLastName
             // 
-            textBox2.Location = new Point(186, 160);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(152, 23);
-            textBox2.TabIndex = 14;
+            txtLastName.Location = new Point(186, 160);
+            txtLastName.Name = "txtLastName";
+            txtLastName.Size = new Size(152, 23);
+            txtLastName.TabIndex = 14;
             // 
-            // textBox3
+            // txtAge
             // 
-            textBox3.Location = new Point(186, 210);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(59, 23);
-            textBox3.TabIndex = 15;
+            txtAge.Location = new Point(186, 213);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new Size(59, 23);
+            txtAge.TabIndex = 15;
             // 
-            // textBox4
+            // txtContactNumber
             // 
-            textBox4.Location = new Point(629, 269);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 18;
+            txtContactNumber.Location = new Point(629, 271);
+            txtContactNumber.Name = "txtContactNumber";
+            txtContactNumber.Size = new Size(121, 23);
+            txtContactNumber.TabIndex = 18;
             // 
-            // textBox5
+            // txtFirstName
             // 
-            textBox5.Location = new Point(629, 160);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 17;
+            txtFirstName.Location = new Point(629, 160);
+            txtFirstName.Name = "txtFirstName";
+            txtFirstName.Size = new Size(121, 23);
+            txtFirstName.TabIndex = 17;
             // 
-            // textBox6
+            // txtMiddleInitial
             // 
-            textBox6.Location = new Point(448, 160);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(46, 23);
-            textBox6.TabIndex = 16;
+            txtMiddleInitial.Location = new Point(431, 161);
+            txtMiddleInitial.Name = "txtMiddleInitial";
+            txtMiddleInitial.Size = new Size(46, 23);
+            txtMiddleInitial.TabIndex = 16;
             // 
             // button1
             // 
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Bahnschrift", 12F);
-            button1.Location = new Point(374, 372);
+            button1.Font = new Font("Bahnschrift", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(347, 372);
             button1.Name = "button1";
             button1.Size = new Size(110, 34);
             button1.TabIndex = 19;
             button1.Text = "Register";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Bahnschrift", 12F);
-            button2.Location = new Point(644, 373);
+            button2.Font = new Font("Bahnschrift", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.Location = new Point(640, 372);
             button2.Name = "button2";
             button2.Size = new Size(110, 34);
             button2.TabIndex = 20;
             button2.Text = "Records";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // FrmRegistration
             // 
@@ -247,27 +249,28 @@
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(textBox4);
-            Controls.Add(textBox5);
-            Controls.Add(textBox6);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
+            Controls.Add(txtContactNumber);
+            Controls.Add(txtFirstName);
+            Controls.Add(txtMiddleInitial);
+            Controls.Add(txtAge);
+            Controls.Add(txtLastName);
+            Controls.Add(txtStudentNumber);
+            Controls.Add(cbProgram);
+            Controls.Add(cbGender);
             Controls.Add(label10);
             Controls.Add(label6);
             Controls.Add(label7);
             Controls.Add(label8);
             Controls.Add(label9);
             Controls.Add(label5);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(dtpBirthday);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(lblRegistration);
             Name = "FrmRegistration";
             Text = "FrmRegistration";
+            Load += FrmRegistration_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -278,21 +281,21 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpBirthday;
         private Label label5;
         private Label label6;
         private Label label7;
         private Label label8;
         private Label label9;
         private Label label10;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox5;
-        private TextBox textBox6;
+        private ComboBox cbGender;
+        private ComboBox cbProgram;
+        private TextBox txtStudentNumber;
+        private TextBox txtLastName;
+        private TextBox txtAge;
+        private TextBox txtContactNumber;
+        private TextBox txtFirstName;
+        private TextBox txtMiddleInitial;
         private Button button1;
         private Button button2;
     }

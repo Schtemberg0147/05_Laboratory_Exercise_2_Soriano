@@ -2,9 +2,11 @@ namespace _05_Laboratory_Exercise_2_Soriano
 {
     public partial class FrmOpenTextFile : Form
     {
+        FrmStudentRecord studentRecord;
         public FrmOpenTextFile()
         {
             InitializeComponent();
+            studentRecord = new FrmStudentRecord();
         }
 
         private void btnOpen_Click(object sender, EventArgs e)
@@ -18,11 +20,17 @@ namespace _05_Laboratory_Exercise_2_Soriano
             using (StreamReader streamReader = File.OpenText(path))
             {
                 string _getText = "";
-                while ((_getText = streamReader.ReadLine()) != null){
+                while ((_getText = streamReader.ReadLine()) != null)
+                {
                     Console.WriteLine(_getText);
                     lvShowText.Items.Add(_getText);
                 }
             }
+        }
+
+        private void FrmOpenTextFile_Load_1(object sender, EventArgs e)
+        {
+            studentRecord.Show();
         }
     }
 }

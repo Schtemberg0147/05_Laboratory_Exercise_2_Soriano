@@ -37,21 +37,24 @@
             // 
             lvShowText.Alignment = ListViewAlignment.Default;
             lvShowText.AllowColumnReorder = true;
+            lvShowText.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lvShowText.LabelWrap = false;
             lvShowText.Location = new Point(113, 64);
             lvShowText.Name = "lvShowText";
-            lvShowText.Size = new Size(572, 220);
+            lvShowText.Size = new Size(572, 262);
             lvShowText.TabIndex = 0;
             lvShowText.UseCompatibleStateImageBehavior = false;
             lvShowText.View = View.List;
             // 
             // btnOpen
             // 
-            btnOpen.Location = new Point(364, 357);
+            btnOpen.FlatStyle = FlatStyle.Flat;
+            btnOpen.Font = new Font("Bahnschrift", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnOpen.Location = new Point(312, 367);
             btnOpen.Name = "btnOpen";
-            btnOpen.Size = new Size(75, 23);
+            btnOpen.Size = new Size(178, 37);
             btnOpen.TabIndex = 1;
-            btnOpen.Text = "button1";
+            btnOpen.Text = "Open File";
             btnOpen.UseVisualStyleBackColor = true;
             btnOpen.Click += btnOpen_Click;
             // 
@@ -68,6 +71,7 @@
             Controls.Add(lvShowText);
             Name = "FrmOpenTextFile";
             Text = "Form1";
+            Load += FrmOpenTextFile_Load_1;
             ResumeLayout(false);
         }
 

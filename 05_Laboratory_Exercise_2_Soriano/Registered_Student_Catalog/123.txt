@@ -1,0 +1,7 @@
+Student Number: 123
+Full Name: 123 1 123
+Program: 123
+Gender: 123
+Age: 123
+Birthday: 2025-10-31
+Contact Number: 123

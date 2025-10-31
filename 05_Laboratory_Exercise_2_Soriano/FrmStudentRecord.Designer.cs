@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             lblViewRecord = new Label();
-            listView1 = new ListView();
+            lvShowText = new ListView();
             btnRegister = new Button();
             btnFind = new Button();
             btnUpload = new Button();
+            openFileDialog1 = new OpenFileDialog();
             SuspendLayout();
             // 
             // lblViewRecord
@@ -45,13 +46,19 @@
             lblViewRecord.TabIndex = 0;
             lblViewRecord.Text = "View Record";
             // 
-            // listView1
+            // lvShowText
             // 
-            listView1.Location = new Point(25, 69);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(578, 348);
-            listView1.TabIndex = 1;
-            listView1.UseCompatibleStateImageBehavior = false;
+            lvShowText.Font = new Font("Bahnschrift", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lvShowText.LabelWrap = false;
+            lvShowText.Location = new Point(25, 69);
+            lvShowText.Name = "lvShowText";
+            lvShowText.RightToLeft = RightToLeft.Yes;
+            lvShowText.RightToLeftLayout = true;
+            lvShowText.Size = new Size(578, 348);
+            lvShowText.TabIndex = 1;
+            lvShowText.UseCompatibleStateImageBehavior = false;
+            lvShowText.UseWaitCursor = true;
+            lvShowText.View = View.Details;
             // 
             // btnRegister
             // 
@@ -63,6 +70,7 @@
             btnRegister.TabIndex = 2;
             btnRegister.Text = "Register";
             btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnRegister_Click;
             // 
             // btnFind
             // 
@@ -74,6 +82,7 @@
             btnFind.TabIndex = 3;
             btnFind.Text = "Find";
             btnFind.UseVisualStyleBackColor = true;
+            btnFind.Click += btnFind_Click;
             // 
             // btnUpload
             // 
@@ -87,6 +96,10 @@
             btnUpload.UseVisualStyleBackColor = true;
             btnUpload.Click += btnUpload_Click;
             // 
+            // openFileDialog1
+            // 
+            openFileDialog1.FileName = "openFileDialog1";
+            // 
             // FrmStudentRecord
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -95,7 +108,7 @@
             Controls.Add(btnUpload);
             Controls.Add(btnFind);
             Controls.Add(btnRegister);
-            Controls.Add(listView1);
+            Controls.Add(lvShowText);
             Controls.Add(lblViewRecord);
             Name = "FrmStudentRecord";
             Text = "FrmStudentRecord";
@@ -106,9 +119,10 @@
         #endregion
 
         private Label lblViewRecord;
-        private ListView listView1;
+        private ListView lvShowText;
         private Button btnRegister;
         private Button btnFind;
         private Button btnUpload;
+        private OpenFileDialog openFileDialog1;
     }
 }
