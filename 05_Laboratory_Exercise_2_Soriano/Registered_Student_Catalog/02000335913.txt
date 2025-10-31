@@ -1,0 +1,7 @@
+Student Number: 02000335913
+Full Name: Jose M. Soriano
+Program: BS Information Technology
+Gender: Male
+Age: 20
+Birthday: 2004-11-12
+Contact Number: 0912 345 6778

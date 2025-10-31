@@ -32,7 +32,7 @@ namespace _05_Laboratory_Exercise_2_Soriano
 
         private void btnFind_Click(object sender, EventArgs e)
         {
-            openFileDialog1.InitialDirectory = Path.GetFullPath(@"..\..\Registered_Student_Catalog");
+            openFileDialog1.InitialDirectory = Path.GetFullPath(@"..\..\..\Registered_Student_Catalog");
             openFileDialog1.Title = "Browse Text Files";
             openFileDialog1.DefaultExt = "txt";
             openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";

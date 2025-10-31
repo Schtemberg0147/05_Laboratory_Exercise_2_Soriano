@@ -38,11 +38,6 @@ namespace _05_Laboratory_Exercise_2_Soriano
             InitializeComponent();
         }
 
-        private void lblRegistration_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             //initialize variables
